@@ -1,9 +1,7 @@
 import { createStore } from 'redux';
 
-function reserv(){
-  return [];
-}
+import rootReducer from './modules/rootReducer';
 
-const store = createStore(reserv);
+const store = createStore(rootReducer);
 
 export default store;
