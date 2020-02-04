@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Reserved(){
+export default function Reserv(){
   return(
     <div>
-    Reserved page
+    Reservation page
     </div>
   );
 }
