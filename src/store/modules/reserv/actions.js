@@ -11,3 +11,11 @@ exports.remReserv = function (id) {
     id,
   }
 };
+
+exports.updateAmountReserv = function (id, amount) {
+  return {
+    type: 'UPDATE_RESERV',
+    id,
+    amount,
+  }
+};

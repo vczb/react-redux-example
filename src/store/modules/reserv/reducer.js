@@ -26,6 +26,22 @@ export default function reserv(state = [], action, amount ){
         }
 
       });
+    case 'UPDATE_RESERV':{
+
+      if (action.amount <= 0) {
+        return state;
+      }
+
+      return produce(state, draft => {
+        const tripIndex = draft.findIndex(trip => trip.id === action.id);
+
+        if (tripIndex >= 0) {
+          draft[tripIndex].amount = Number(action.amount);
+        }
+
+      });
+    }
+      break;
     default:
       return state
   }
