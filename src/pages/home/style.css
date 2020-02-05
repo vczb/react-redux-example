@@ -33,6 +33,12 @@
   justify-content: center;
   color: #FFF;
   background: #191919;
+  margin-top: 10px;
+}
+
+.box button span{
+  color: #FFF !important;
+  font-weight: bold;
 }
 
 .box button div{
