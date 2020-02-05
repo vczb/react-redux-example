@@ -17,6 +17,15 @@ export default function reserv(state = [], action, amount ){
         }
 
       });
+    case 'REMOVE_RESERV':
+      return produce(state, draft => {
+        const tripIndex = draft.findIndex(trip => trip.id === action.id);
+
+        if (tripIndex >= 0) {
+          draft.splice(tripIndex, 1);
+        }
+
+      });
     default:
       return state
   }
