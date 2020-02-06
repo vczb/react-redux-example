@@ -1,6 +1,12 @@
-exports.addReserv = function (trip) {
+exports.addReservRequest = function (id) {
   return {
-    type: 'ADD_RESERV',
+    type: 'ADD_RESERV_REQUEST',
+    id,
+  }
+};
+exports.addReservSuccess = function (trip) {
+  return {
+    type: 'ADD_RESERV_SUCCESS',
     trip,
   }
 };
