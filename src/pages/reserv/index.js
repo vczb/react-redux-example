@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { MdDelete, MdAddCircle, MdRemoveCircle } from 'react-icons/md';
-import { remReserv,updateAmountReserv } from '../../store/modules/reserv/actions';
+import { remReserv,updateAmountRequest } from '../../store/modules/reserv/actions';
 import './style.css';
 
 export default function Reservas() {
@@ -13,11 +13,11 @@ export default function Reservas() {
   }
 
   function decrementAmount(trip) {
-    dispatch(updateAmountReserv(trip.id, trip.amount - 1 ))
+    dispatch(updateAmountRequest(trip.id, trip.amount - 1 ))
   }
 
   function incrementAmount(trip) {
-    dispatch(updateAmountReserv(trip.id, trip.amount + 1 ))
+    dispatch(updateAmountRequest(trip.id, trip.amount + 1 ))
   }
 
   return (

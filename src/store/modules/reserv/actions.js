@@ -18,9 +18,17 @@ exports.remReserv = function (id) {
   }
 };
 
-exports.updateAmountReserv = function (id, amount) {
+exports.updateAmountRequest = function (id, amount) {
   return {
-    type: 'UPDATE_RESERV',
+    type: 'UPDATE_RESERV_REQUEST',
+    id,
+    amount,
+  }
+};
+
+exports.updateAmountSuccess = function (id, amount) {
+  return {
+    type: 'UPDATE_RESERV_SUCCESS',
     id,
     amount,
   }
