@@ -14,11 +14,9 @@
 ## Tecnologias
 
 - React
-- Axios
-- History
-- Immer
 - Redux
 - Saga
+- Immer
 - JSON Server
 
 ## Licença
@@ -26,4 +24,4 @@
 MIT
 
 
-##### App desenvolvido no [Curso de React](https://www.udemy.com/course/curso-reactjs/) da Udemy 
+###### App desenvolvido durante o [Curso de React](https://www.udemy.com/course/curso-reactjs/) da Udemy 
